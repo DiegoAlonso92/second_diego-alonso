@@ -4,68 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Second</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <a href="./index.html">
-            <img src="./img/logoSecundaHorizontal.jpg" class="logoSecundaHorizontal" alt="Logo Secunda Horizontal">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/sucursales.html">Sucursales</a></li>
-                <li><a href="./pages/tienda.html">Tienda</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <form action="#">
-                    <input type="search" class="buscador" placeholder="Buscar" name="Busqueda">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <!-- logo -->
+              <a class="navbar-brand" href="./index.html">
+                <img src="./img/logoSecundaHorizontal.jpg" class="logoSecundaHorizontal" alt="Logo Secunda Horizontal">
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html" style="
+                    color: aliceblue;">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./pages/tienda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tienda
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Ropa de mujer</a></li>
+                      <li><a class="dropdown-item" href="#">Ropa de hombre</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ropa unisex</a></li>
+                      <li><a class="dropdown-item" href="#">Ropa de niño</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-            </ul>
-        </nav>
-        <a href="./index.html">
-            <img src="./img/logoSecunda.jpg" class="logoSecunda" alt="Logo Secunda">
-        </a>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <div>
-            <h3>Ver ropa mujer</h3>
-            <img src="./img/mujer.jpg" class="imgMujer" alt="imgMujer">
-        </div>
-
-        <div>
-            <h3>Ver ropa hombre</h3>
-            <img src="./img/hombre.jpg" class="imgHombre" alt="imgHombre">
-        </div>
-
-        <div>
-            <h3>Ver ropa unisex</h3>
-            <img src="./img/unisex.jpg" class="imgUnisex" alt="imgUnisex">
-        </div>
-
-        <div>
-            <h3>Ver ropa niño</h3>
-            <img src="./img/ropaNiño.jpg" class="imgNiño" alt="imgNiño">
-        </div>
-
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./img/mujer.jpg" class="card-img-top" alt="imgMujer">
+                <div class="card-body">
+                  <h5 class="card-title">Ver ropa de mujer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/hombre.jpg" class="card-img-top" alt="imgHombre">
+                <div class="card-body">
+                  <h5 class="card-title">Ver ropa de hombre</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/unisex.jpg" class="card-img-top" alt="imgUnisex">
+                <div class="card-body">
+                  <h5 class="card-title">Ver ropa unisex</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/ropaNiño.jpg" class="card-img-top" alt="imgNiño">
+                <div class="card-body">
+                  <h5 class="card-title">Ver ropa de niñ@</h5>
+                </div>
+              </div>
+            </div>
+          </div>
     </main>
     <footer>
-        <p class="muyPronto">Muy pronto..</p>
-        <div>
-            <img src="./img/logoFacebook.jpg" class="logoFacebook" alt="logoFacebook">
-        </div>
-
-        <div>
-            <img src="./img/logoInstagram.jpg" class="logoInstagram" alt="logoInstagram">
-        </div>
-
-        <div>
-            <img src="./img/logoWhatsapp.jpg" class="logoWhats" alt="logoWhats">
-        </div>
-
+        <div class="card-group">
+            <div class="card">
+              <img src="./img/logoFacebook.jpg" class="card-img-top" alt="logoFacebook">
+              <div class="card-body">
+                <h5 class="card-title">Facebook</h5>
+                <p class="card-text">Visita nuestro Facebook para mas información.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/logoInstagram.jpg" class="card-img-top" alt="logoInstagram">
+              <div class="card-body">
+                <h5 class="card-title">Instagram</h5>
+                <p class="card-text">Visita nuestro Instagram para mas información.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/logoWhatsapp.jpg" class="card-img-top" alt="logoWhatsapp">
+              <div class="card-body">
+                <h5 class="card-title">Waht's app</h5>
+                <p class="card-text">Escribenos a what's app para mas información.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
